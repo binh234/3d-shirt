@@ -1,11 +1,9 @@
 package utils
 
 import (
-	"log"
 	"os"
 	"sync"
 
-	"github.com/joho/godotenv"
 	"github.com/sashabaranov/go-openai"
 )
 
@@ -28,16 +26,7 @@ type Config struct {
 var config *Config
 var once sync.Once
 
-func loadEnv() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
-	log.Println("Loading .env successully")
-}
-
 func initConfig() {
-	loadEnv()
 	config = &Config{
 		OpenAI: &OpenAIConfig{
 			ApiKey: os.Getenv("OPENAI_API_KEY"),
