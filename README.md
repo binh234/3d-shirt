@@ -1,6 +1,6 @@
 # T-Shirt customizer with threejs
 
-[*Live demo*](https://shirt-t.vercel.app/)
+Live demo at [https://3d-shirt.vercel.app/](https://3d-shirt.vercel.app/)
 
 ![demo](demo/homepage.png)
 
