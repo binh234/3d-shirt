@@ -4,6 +4,7 @@ import (
 	"os"
 	"sync"
 
+	"github.com/joho/godotenv"
 	"github.com/sashabaranov/go-openai"
 )
 
@@ -26,7 +27,12 @@ type Config struct {
 var config *Config
 var once sync.Once
 
+func loadEnv() {
+	godotenv.Load()
+}
+
 func initConfig() {
+	loadEnv()
 	config = &Config{
 		OpenAI: &OpenAIConfig{
 			ApiKey: os.Getenv("OPENAI_API_KEY"),
