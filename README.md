@@ -4,7 +4,7 @@ Live demo at [https://3d-shirt.vercel.app/](https://3d-shirt.vercel.app/)
 
 ![demo](demo/homepage.png)
 
-This repository is an T-shirt customization using `threejs` and DALL-E 2 API allows users to customize their own T-shirt using their favorite color, logo, pattern, or asking AI to generate stunning and attractive logo and pattern for their shirt.
+This repository is a T-shirt customization application using `threejs` and DALL-E 2 API allows users to customize their T-shirt using their favorite color, logo, and pattern, or ask AI to generate stunning and attractive logos and patterns for their shirt.
 
 **Techologies**:
 
